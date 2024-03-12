@@ -1,5 +1,4 @@
 <?php
-
 require_once __DIR__ . '../../app/config.php';
 
 function getRankingDonations($donations = null)
@@ -22,54 +21,62 @@ $query = "SELECT * FROM donations ORDER BY id DESC LIMIT 1";
 
     $recentDonations  = $stmt->fetch(\PDO::FETCH_ASSOC) ?? null;
     ///$rankingDonations = getRankingDonations( $recentDonations );
-
-
-    echo"
-        <h2></h2>
-        <div style='border: thin solid black; margin:5px; padding:10px;'>
-            <h4>CONECTA VALE - TICKET</h4>
-            <hr>
-            <h5><strong>Dados de compra:</strong></h5>
-            <p><strong>Ticket ID:</strong> ".$recentDonations["id"]."</p>
-            <p><strong>Nome:</strong>".$recentDonations['nickname']."</p>
-            <p><strong>Valor:</strong>  R$ ".$recentDonations['value']."</p> 
-            <p><strong>Situação:</strong> ".$recentDonations['status']."</p>      
-            <p><strong>Data de compra</strong>: ".$recentDonations['created_at']."</p>
-            <hr>
-            <h5><strong>Dados do evento:</strong></h5>
-            <p>Data do evento:</p>
-            <p>Local:</p>
-            <p>Horário:</p>
-            <p>Palestrantes:</>
-        </div>
-        ";       
-
-
-    ?>
-
+?>
 <!DOCTYPE html>
-
-<html>
-
+<html lang="pt-br" >
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CodePen - Project: Ticket</title>
+  <link rel="icon" type="image/x-icon" href="assets/images/icon.png">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:600|Squada+One|Rozha+One|Kristi&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="./style_ticket.css">
 
+</head>
 <body>
-    <div style="margin: 10px;" >
-    <p>Imprima ou tire print de tela</p>
+<!-- partial:index.partial.html -->
+<body>
+  <article>
+    <div class="top">
+      <p>ID TIKECT: <?php echo $recentDonations["id"] ?></p>
+      <div class="row">
+        <div class="block">
+          <img src="assets/images/logo_preto.png">
+        </div>
+      </div>
+      </div>
+    <div>
+      Dados do pagador
+      <hr>
+      <h3>Nome:</h3><p><?php echo $recentDonations["nickname"] ?></p>
+      <h3>Contato:</h3><p><?php echo $recentDonations["message"] ?></p>
+      <h3>Valor pago:</h3><p><?php echo"R$ ".$recentDonations["value"] ?></p>
+      <h3>Status Pagamento:</h3><p><?php echo $recentDonations["status"] ?></p>
+      <h3>Data/hora Pagamento:</h3><p><?php echo $recentDonations["created_at"] ?></p><br>  
+      Evento
+      <hr>
+      <h3>Local:</h3><p>Petrolina-PE</p> 
+      <h3>Data e Hora:</h3><p>27/04/24 08:00 - 18:00</p>
+      <h3>Palestrantes:</h3><p><br>José Costa<br>
+                                   Andréia Gomes<br>
+                                   Alessandro Brito<br>
+                                   Rosiane Sampaio<br>
+                                   Alexandre Braga</p>  
+
+  
+       
+    </div><br>
+  </article>
+
+  <div style="color:white; text-align:center; margin-top:-50px;" >
+      <p>Imprima ou tire print de tela</p><br>
     <form>
+      
         <input type="button" value="Imprimir" onclick="window.print()" />
     </form>
-    </div>
-   
-
-    <script src="" async defer></script>
+    </div><br>
 </body>
-
+<!-- partial -->
+  
+</body>
 </html>
