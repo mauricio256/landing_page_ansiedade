@@ -166,7 +166,7 @@
 
                         <hr />
                         <div class="input-group input-group-lg mt-1 mb-3">
-                            <input value="0.10" hidden type="text" class="form-control" id="value" placeholder="0,00"
+                            <input value="159.00" hidden type="text" class="form-control" id="value" placeholder="0,00"
                                 required>
                         </div>
 
@@ -183,10 +183,12 @@
                         <div class="spinner-border text-warning" style="width: 5rem; height: 5rem;" role="status"></div>
                     </div>
 
-                    <div class="row d-none" id="payment-content">
+                    <div class="row d-none" id="payment-content"> 
+                        <h4>R$<strong> 159,00</strong></h4>
                         <div class="col-md-12">
                             <img src="" id="image-qrcode-pix" style="width: 50%;" />
                         </div>
+                       
                         <div class="col-md-12">
                             <textarea class="form-control" id="code-pix" rows="1" cols="20"></textarea>
                             <button
@@ -216,7 +218,7 @@
                 <!-- Body - Pagamento Aprovado -->
                 <div id="modal-body-approved" class="modal-body text-center d-none">
                     <h2 class="text-success mb-3"><br>Sua inscrição foi validada com sucesso! </h2><br>
-                    <a href="ticket.php">Clique aqui para ver seu ticket</a>
+                    <a href="ticket.php?ticket=aprovado" name="ticket" target="_blank" >Clique aqui para ver seu ticket</a>
                     <div class="text-center mt-3">
                       
                 </div>

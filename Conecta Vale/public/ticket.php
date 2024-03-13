@@ -1,4 +1,8 @@
 <?php
+if(($_GET["ticket"]) != "aprovado"){
+  echo"<meta http-equiv='refresh' content='0; url=index.php'>";
+}
+
 require_once __DIR__ . '../../app/config.php';
 
 function getRankingDonations($donations = null)
@@ -27,7 +31,7 @@ $query = "SELECT * FROM donations ORDER BY id DESC LIMIT 1";
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CodePen - Project: Ticket</title>
+  <title>Ticket</title>
   <link rel="icon" type="image/x-icon" href="assets/images/icon.png">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:600|Squada+One|Rozha+One|Kristi&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 <link rel="stylesheet" href="./style_ticket.css">
@@ -75,6 +79,10 @@ $query = "SELECT * FROM donations ORDER BY id DESC LIMIT 1";
         <input type="button" value="Imprimir" onclick="window.print()" />
     </form>
     </div><br>
+    <div style="text-align: center;" >
+      <a style="color: white; text-align: center;" href="index.php" >Sair</a><br>
+    </div><br><br>
+
 </body>
 <!-- partial -->
   
