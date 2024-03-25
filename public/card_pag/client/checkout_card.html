@@ -39,7 +39,7 @@
                                                     <p><b>Description: </b><span id="product-description">Some book</span><br>
                                                         <b>Author: </b>Dale Carnegie<br>
                                                         <b>Number of pages: </b>336<br>
-                                                        <b>Price:</b> $ <span id="unit-price">1</span></p>
+                                                        <b>Price:</b> R$ <span id="unit-price">5</span></p>
                                                 </div>
                                             </div>
                                             <div hidden class="col-md-3 product-detail">
@@ -55,7 +55,7 @@
                     <div class="col-md-12 col-lg-4">
                         <div class="summary">
                             <h3>Ticket</h3>
-                            <div class="summary-item"><span class="text">Valor</span><span class="price" id="cart-total"></span></div>
+                            <div class="summary-item"><span class="text">Valor</span><span class="price" id="cart-total">R$: 159,00</span></div>
                             <button class="btn btn-primary btn-lg btn-block" id="checkout-btn">Pagar</button>
                         </div>
                     </div>
@@ -67,7 +67,7 @@
     <section class="payment-form dark">
         <div class="container__payment">
             <div class="block-heading">
-                <h2>Pagamento com Cartao de Credito</h2>
+                <h2>Pagamento com Cartao de Crédito</h2>
             </div>
             <div class="form-payment">
                 <div class="products">
@@ -82,7 +82,7 @@
                     <form id="form-checkout">
                         <h3 class="title">Dados do pagador</h3>
                         <div class="row">
-                            <div class="form-group col">
+                            <div class="form-group col">    
                                 <input id="form-checkout__cardholderEmail" name="cardholderEmail" type="email" class="form-control"/>
                             </div>
                         </div>
@@ -98,23 +98,28 @@
                         <h3 class="title">Informações do Cartão</h3>
                         <div class="row">
                             <div class="form-group col-sm-8">
+                                <label>Nome do titular do cartão</label>
                                 <input id="form-checkout__cardholderName" name="cardholderName" type="text" class="form-control" />
-                            </div>
+                            </div>  
                             <div class="form-group col-sm-4">
                                 <div class="input-group expiration-date">
+                                    <label>Data de vencimento</label>
                                     <div id="form-checkout__expirationDate" class="form-control h-40"></div>
                                 </div>
                             </div>
                             <div class="form-group col-sm-8">
+                                <label>Número do cartão</label>
                                 <div id="form-checkout__cardNumber" class="form-control h-40"></div>
                             </div>
                             <div class="form-group col-sm-4">
+                                <label>Código de segurança</label>
                                 <div id="form-checkout__securityCode" class="form-control h-40"></div>
                             </div>
                             <div id="issuerInput" class="form-group col-sm-12 hidden">
                                 <select id="form-checkout__issuer" name="issuer" class="form-control"></select>
                             </div>
                             <div class="form-group col-sm-12">
+                                <label>Parcelas</label>
                                 <select id="form-checkout__installments" name="installments" type="text" class="form-control"></select>
                             </div>
                             <div class="form-group col-sm-12">

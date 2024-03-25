@@ -103,7 +103,7 @@
                             </div>
 
                             <div class="text-center mt-3">
-                                <a href="https://api.whatsapp.com/send?phone=5574981370420&text=Texto%20aqui"
+                                <a href="https://api.whatsapp.com/send?phone=5574988712317&text=Texto%20aqui"
                                     target="_blank">
                                     <svg enable-background="new 0 0 512 512" width="20" height="20" version="1.1"
                                         viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
