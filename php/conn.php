@@ -3,7 +3,7 @@
  $server = 'localhost';
  $usuario = 'root';
  $senha = '';
- $dbname = 'conectavale';
+ $dbname = 'socialimpulse';
 
  try {
      $conn = new PDO('mysql:host='.$server.';dbname='.$dbname.'', $usuario, $senha);

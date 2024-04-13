@@ -1,7 +1,8 @@
 body{
-    background-image: url(../images/bg-01.jpg);
+    background-image: url(../images/bg.webp);
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
+    background-color: black;
 }
