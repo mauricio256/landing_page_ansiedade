@@ -6,7 +6,7 @@
  $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_SPECIAL_CHARS);
 
  $conn;
- $query = "INSERT INTO `participante` (`id_cadastro`, `nome`, `telefone`, `email`,`valor`, `pagamento`, `data_cadastro`) VALUES (NULL, '$nome', '$tel', '$email','2', 'pendente', now());";
+ $query = "INSERT INTO `participante` (`id_cadastro`, `nome`, `telefone`, `email`,`valor`, `pagamento`, `data_cadastro`) VALUES (NULL, '$nome', '$tel', '$email','0', 'pendente', now());";
            
  try {
       if($conn->exec($query)):?>
@@ -34,18 +34,20 @@
                         
                         <div class="shadow-none p-3 mb-5 bg-white rounded pb-5 p-3">
                             <img src="../images/cadastrado.gif">
+                           
                             <p class="display-6 text-success">Cadastro realizado com sucesso!</p>
-                            <p class="text-success"><strong>Você receberá seu ticket por E-mail após realizar o pagamento.</p> <br> 
+                            <p class="text-success"><strong>Você receberá os dados de sua credencial de acesso por E-mail, após realizar o pagamento.</p> <br> 
                             <p class="text-danger"><strong>ATENÇÃO! </strong><br>Após realizar o pagamento enviar seu nome e o comprovante para o WhatsApp: <strong>(74) 8871-2317</strong>  | José Pereira da Costa.</p>  
-
+                       
                             <hr>
-                            <h5>PIX</h5> <h4><strong>R$ 799,00</strong></h4>Chave PIX: <strong>838.552.205-06</strong> <br> 
-                            <input id="chavePix" value="83855220506"  style=" width: 100px; margin:10px; border:none; background:none;"/><br>
+                            <h5>PIX</h5> <h4><strong>R$ 749,00</strong></h4>Chave PIX: <strong>838.552.205-06</strong> <br> 
+                            <input id="chavePix" value="83855220506"  style=" width: 110px; margin:10px; border:none; background:none;"/><br>
+                            <img src="../images/QRCODE.webp" width="200px"><br><br>
                             <button class="btn btn-success" id="copy">Copiar Chave Pix</button>
                             <p id="msg" style="display:none; color:blue;">Chave pix copiada!<br> Abra o aplicativo do seu banco</p>
                             <hr>
-                            <h5>Cartão de Crédito</h5> <h4><strong>R$ 999,00</strong></h4> Até 10X (sem juros)<br><br> 
-                            <a class="btn btn-success" href="https://conecta-vale.pay.yampi.com.br/r/81VLZ352QC">Pagar com Cartão</a></h5>
+                            <h5>Cartão de Crédito</h5> <h4><strong>R$ 936,25</strong></h4> Até 10X (sem juros)<br><br> 
+                            <a class="btn btn-success" href="https://social-impulse.pay.yampi.com.br/r/PABJXCMTEH">Pagar com Cartão</a></h5>
                             <hr>
                                 
                         </div>
