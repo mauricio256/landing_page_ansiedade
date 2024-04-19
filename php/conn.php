@@ -10,7 +10,7 @@
  $server = 'localhost';
  $usuario = 'id21003317_root';
  $senha = '$Senha=130121';
- $dbname = 'id21003317_conectavale';
+ $dbname = 'id21003317_socialimpulse';
 
  */
 
