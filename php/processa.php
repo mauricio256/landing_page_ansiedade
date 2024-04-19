@@ -35,8 +35,7 @@
                         <div class="shadow-none p-3 mb-5 bg-white rounded pb-5 p-3">
                             <img src="../images/cadastrado.gif">
                            
-                            <p class="display-6 text-success">Cadastro realizado com sucesso!</p>
-                            <p class="text-success"><strong>Você receberá os dados de sua credencial de acesso por E-mail, após realizar o pagamento.</p> <br> 
+                            <p class="display-6 text-success">Cadastro realizado com sucesso!</p> 
                             <p class="text-danger"><strong>ATENÇÃO! </strong><br>Após realizar o pagamento enviar seu nome e o comprovante para o WhatsApp: <strong>(74) 8871-2317</strong>  | José Pereira da Costa.</p>  
                        
                             <hr>
