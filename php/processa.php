@@ -40,7 +40,7 @@
                             <p class="text-danger"><strong>ATENÇÃO! </strong><br>Após realizar o pagamento enviar seu nome e o comprovante para o WhatsApp: <strong>(74) 8871-2317</strong>  | José Pereira da Costa.</p>  
                        
                             <hr>
-                            <h5>PIX</h5> <h4><strong>R$ 749,00</strong></h4>Chave PIX: <strong>838.552.205-06</strong> <br> 
+                            <h5>PIX (Com 20% Desconto)</h5> <h4><strong>R$ 749,00</strong></h4>Chave PIX: <strong>838.552.205-06</strong> <br> 
                             <input id="chavePix" value="83855220506"  style=" width: 110px; margin:10px; border:none; background:none;"/><br>
                             <img src="../images/QRCODE.webp" width="200px"><br><br>
                             <button class="btn btn-success" id="copy">Copiar Chave Pix</button>
