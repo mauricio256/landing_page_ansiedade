@@ -47,7 +47,7 @@
                             <p id="msg" style="display:none; color:blue;">Chave pix copiada!<br> Abra o aplicativo do seu banco</p>
                             <hr>
                             <h5>Cartão de Crédito</h5> <h4><strong>R$ 936,25</strong></h4> Até 10X (sem juros)<br><br> 
-                            <a class="btn btn-success" href="https://social-impulse.pay.yampi.com.br/r/PABJXCMTEH">Pagar com Cartão</a></h5>
+                            <a class="btn btn-success" href="https://social-impulse.pay.yampi.com.br/r/1BTZDTBVH9">Pagar com Cartão</a></h5>
                             <hr>
                                 
                         </div>
