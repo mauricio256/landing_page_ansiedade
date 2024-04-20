@@ -56,10 +56,41 @@ if($result == 1){ ?>
 </html>
 
 
-<?php echo"FALTA Enviar e-mail para o USER"; } else{ 
-  echo"
-  <script>
-      window.location.href='index.html';
-  </script>
-  ";
-}
+<?php 
+
+} /// fecha a TAG do IF(){ escapando HTML
+
+
+  // Message
+  $message = '
+  <html>
+  <head>
+    <title>Curso Presencial de Tráfego Pago</title>
+  </head>
+  <body>
+    <h2>Curso Presencial de Tráfego Pago</h2><hr>
+    <h3>Confirmação de pagamento</h3><hr><br>
+    <strong>Nome:</strong>'.$participante["nome"].'<br>
+    <strong>Valor:</strong>'.$participante["valor"].'<br>
+    <strong>Data do evento</strong>NONE<br>
+    <strong>Local do evento:</strong>NONE<br>
+    <strong>Hora:</strong>NONE<br>
+  </body>
+  </html>
+  ';
+  
+  // Se as linhas forem maiores que 70 caracteres, deve-se usar wordwrap()
+  $message = wordwrap($message, 70, "\r\n");
+  
+  // Envia
+  mail( $participante["email"], 'Meu Assunto', $message);
+ 
+  
+
+
+
+
+
+
+?>
+
