@@ -1,8 +1,11 @@
 body{
-    background-image: url(../images/bg.webp);
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
-    background-color: black;
+    background-color: #febd59;
+
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
